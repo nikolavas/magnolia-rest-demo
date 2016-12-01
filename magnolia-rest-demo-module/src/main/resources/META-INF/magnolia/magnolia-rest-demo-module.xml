@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module SYSTEM "module.dtd" >
+<module>
+  <name>magnolia-rest-demo-module</name>
+  <displayName>${project.name}</displayName>
+  <description>${project.description}</description>
+  <class>mk.nvasilev.magnolia.MagnoliaRestDemoModule</class>
+  <versionHandler>mk.nvasilev.magnolia.setup.MagnoliaRestDemoModuleVersionHandler</versionHandler>
+  <version>${project.version}</version>
+    
+    <components>
+        <id>main</id>
+        <component>
+            <type>mk.nvasilev.magnolia.rest.service.v1.employee.EmployeeService</type>
+            <implementation>mk.nvasilev.magnolia.rest.service.v1.employee.EmployeeService</implementation>
+            <scope>singleton</scope>
+        </component>
+    </components>
+
+  <dependencies>
+    <dependency>
+      <name>core</name>
+      <version>5.5/*</version>
+    </dependency>
+    <!--  Add other dependencies here, e.g the mte (magnolia templating essentials).
+    <dependency>
+      <name>mte</name>
+      <version>0.7/*</version>
+    </dependency>
+    -->
+  </dependencies>
+</module>
