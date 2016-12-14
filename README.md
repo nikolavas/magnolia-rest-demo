@@ -1,1 +1,1 @@
-# magnolia-rest-demo
+# Magnolia CMS RESTful Web Services Example
